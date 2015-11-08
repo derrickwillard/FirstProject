@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C31f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htq-MR-QjE">
+                                <rect key="frame" x="53" y="429" width="90" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Bills Suck">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.050980392156862744" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BillsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ltv-MI-Pqs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Buffalo_Bills_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zMS-Ny-I5Z">
+                                <rect key="frame" x="0.0" y="93" width="143" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Buffalo_Sabres_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Kf9-JN-6Eb">
+                                <rect key="frame" x="187" y="83" width="151" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrQ-Sr-Hgu">
+                                <rect key="frame" x="204" y="429" width="117" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Sabres Suck">
+                                    <color key="titleColor" red="0.023529411764705882" green="0.12549019607843137" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SabresButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFi-KA-TYo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BillsLogo" destination="zMS-Ny-I5Z" id="bF5-eL-TXn"/>
+                        <outlet property="BillsSuck" destination="htq-MR-QjE" id="8qy-4W-dOL"/>
+                        <outlet property="SabresLogo" destination="Kf9-JN-6Eb" id="oIB-S5-nuP"/>
+                        <outlet property="SabresSuck" destination="VrQ-Sr-Hgu" id="Fyb-Dc-iBv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="307.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Buffalo_Bills_logo" width="1280" height="918"/>
+        <image name="Buffalo_Sabres_Logo" width="1024" height="1024"/>
+    </resources>
+</document>
